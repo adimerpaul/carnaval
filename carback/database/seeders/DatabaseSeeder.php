@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             RubroSeeder::class,
             PuntoSeeder::class,
             AvisoSeeder::class,
+            ConjuntoSeeder::class
         ]);
     }
 }
