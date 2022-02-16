@@ -1,37 +1,28 @@
-const express = require('express');
-const app = express();
-const http = require('http');
-const server = http.createServer(app);
-const { Server } = require("socket.io");
-const io = require("socket.io")(server, {
-    handlePreflightRequest: (req, res) => {
-        const headers = {
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
-            "Access-Control-Allow-Origin": req.headers.origin, //or the specific origin you want to give access to,
-            "Access-Control-Allow-Credentials": true
-        };
-        res.writeHead(200, headers);
-        res.end();
-    }
-});
 var cors = require('cors')
+var express=require('express');
+var app = express();
+var http = require('http').createServer(app);
+var io = require('socket.io')(http);
+// var path=require('path');
+app.set('port', process.env.PORT || 3000);
+app.use(cors());
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
+// app.use(express.static(__dirname + '/public'));
 
-app.use(cors())
-
-app.get('/', (req, res) => {
+app.get('/', function(req, res){
     res.sendFile(__dirname + '/index.html');
 });
-
-io.on('connection', (socket) => {
-    console.log('a user connected');
-});
-
-io.on('connection', (socket) => {
-    socket.on('chat message', (msg) => {
-        io.emit('chat message', msg);
+io.on('connection',(socket)=>{
+    console.log('newuser')
+})
+io.on('connection', async (socket) => {
+    socket.on('chatmessage', (msg) => {
+        io.emit('chatmessage', msg);
     });
 });
-
-server.listen(3000, () => {
-    console.log('listening on *:3000');
+http.listen(app.get('port'), function(){
+    console.log('listening on *:'+app.get('port'));
 });
+
+
