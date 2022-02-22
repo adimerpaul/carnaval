@@ -1,6 +1,6 @@
 var cors = require('cors')
 var express=require('express');
-var Pedido=require('./models/Pedido');
+// var Pedido=require('./models/Pedido');
 var app = express();
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
