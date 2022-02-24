@@ -253,6 +253,13 @@ export default {
         this.conjuntos2=this.conjuntos
         this.conjunto=this.conjuntos[0]
         this.$q.loading.hide()
+      }).catch(err=>{
+        this.$q.loading.hide()
+        this.$q.notify({
+          message:err.response.data,
+          color:'red',
+          icon:'error'
+        })
       })
     },
     ubicacion(e){
