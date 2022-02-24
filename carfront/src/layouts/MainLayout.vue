@@ -36,7 +36,8 @@
         <q-list bordered>
           <q-item v-for="r in rubros" :key="r.id"  :to="r.url" exact clickable v-ripple>
             <q-item-section avatar>
-              <q-icon :name="r.icono" />
+              <q-icon :name="r.icono" material-icons-outlined/>
+
             </q-item-section>
             <q-item-section>
               <q-item-label> {{ r.nombre }}</q-item-label>

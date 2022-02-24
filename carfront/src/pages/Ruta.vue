@@ -1,5 +1,6 @@
 <template>
-  <div style="height: 100vh ; width: 100%;">
+  <div style="height: 80vh ; width: 100%;">
+<!--    <q-btn @click="click" label="click" icon="send" color="negative" />-->
     <l-map
       @ready="onReady"
       v-model="zoom"
@@ -85,10 +86,7 @@
       <!--        </l-popup>-->
       <!--      </l-rectangle>-->
     </l-map>
-    <q-dialog
-      v-model="modelactualizarconjunto"
-      full-width
-    >
+    <q-dialog v-model="modelactualizarconjunto" full-width>
       <q-card>
         <q-card-section>
           <div class="text-h6">Actualizar conjunto</div>
@@ -99,8 +97,6 @@
             <q-btn type="submit" color="primary" class="full-width" label="Actualizar" icon="send" />
           </q-card-section>
         </q-form>
-
-
 <!--        <q-card-actions align="right" class="bg-white text-teal">-->
 <!--          <q-btn flat label="OK" v-close-popup />-->
 <!--        </q-card-actions>-->
@@ -109,6 +105,9 @@
   </div>
 </template>
 <script>
+// import io from 'socket.io-client'
+const socket = io('https://socket.carnavaloruro.tk')
+
 import {
   LMap,
   LIcon,
@@ -159,7 +158,7 @@ export default {
         [-17.967446120097293,-67.11873955155191],
       ],
       center:[-17.970371, -67.112303],
-      zoom: 16,
+      zoom: 15,
       iconWidth: 25,
       iconHeight: 40,
       conjuntos:[],
@@ -171,10 +170,16 @@ export default {
     };
   },
   created() {
-
     this.misconjuntos();
+    socket.on('chat message', message => {
+      // console.log(message)
+      this.misconjuntos()
+    })
   },
   methods: {
+    click(){
+      socket.emit('chat message','adimer')
+    },
     mostrarconjunto(c){
       this.conjunto=c
       console.log(this.conjunto)
@@ -192,6 +197,7 @@ export default {
       this.$api.put("conjunto/"+this.conjunto.id,this.conjunto).then(res=>{
         // console.log(res.data)
         this.misconjuntos()
+        socket.emit('chat message','adimer')
         this.modelactualizarconjunto=false
       })
     },
@@ -203,6 +209,7 @@ export default {
       this.$api.put("conjunto/"+this.conjunto.id,this.conjunto).then(res=>{
         // console.log(res.data)
         this.misconjuntos()
+        socket.emit('chat message','adimer')
         this.modelactualizarconjunto=false
       })
     },
