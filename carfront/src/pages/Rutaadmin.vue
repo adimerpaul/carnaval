@@ -1,15 +1,16 @@
 <template>
   <div style="height: 80vh ; width: 100%;">
-<!--    <q-btn @click="click" label="click" icon="send" color="negative" />-->
+    <!--    <q-btn @click="click" label="click" icon="send" color="negative" />-->
     <l-map
       @ready="onReady"
       v-model="zoom"
       :zoom="zoom"
       :center="center"
       @move="log('move')"
+      @click="ubicacion"
     >
 
-<!--      @locationfound="onLocationFound"-->
+      <!--      @locationfound="onLocationFound"-->
       <l-tile-layer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       ></l-tile-layer>
@@ -20,12 +21,12 @@
       <!--        </l-tooltip>-->
       <!--      </l-marker>-->
 
-<!--      <l-marker @click="clickopciones(c)" v-for="c in clientes" :key="c.Cod_Aut" :lat-lng="[c.Latitud, c.longitud]"  >-->
-<!--        <l-icon><q-badge class="q-pa-none q-ma-none " color="info" >{{c.Cod_Aut}}</q-badge></l-icon>-->
-<!--      </l-marker>-->
-<!--      <l-marker :lat-lng="center"  >-->
-<!--        <l-icon><q-badge color="info">{{c.Cod_Aut}}</q-badge></l-icon>-->
-<!--      </l-marker>-->
+      <!--      <l-marker @click="clickopciones(c)" v-for="c in clientes" :key="c.Cod_Aut" :lat-lng="[c.Latitud, c.longitud]"  >-->
+      <!--        <l-icon><q-badge class="q-pa-none q-ma-none " color="info" >{{c.Cod_Aut}}</q-badge></l-icon>-->
+      <!--      </l-marker>-->
+      <!--      <l-marker :lat-lng="center"  >-->
+      <!--        <l-icon><q-badge color="info">{{c.Cod_Aut}}</q-badge></l-icon>-->
+      <!--      </l-marker>-->
 
       <!--      <l-marker :lat-lng="[50, 50]" draggable @moveend="log('moveend')">-->
       <!--        <l-popup>-->
@@ -33,25 +34,25 @@
       <!--        </l-popup>-->
       <!--      </l-marker>-->
 
-            <l-marker @click="mostrarconjunto(c)" :lat-lng="[c.lat, c.lng]" v-for="c in conjuntos" :key="c.id"  >
-<!--              <l-popup>-->
-<!--                lol-->
-<!--              </l-popup>-->
-              <l-icon
-                :icon-size="dynamicSize"
-                :icon-anchor="dynamicAnchor"
-                :icon-url="url+'../img/'+c.imagen"
-              />
-            </l-marker>
+      <l-marker @click="mostrarconjunto(c)" :lat-lng="[c.lat, c.lng]" v-for="c in conjuntos" :key="c.id" draggable @moveend="draggableconjunto($event,c)" >
+        <!--              <l-popup>-->
+        <!--                lol-->
+        <!--              </l-popup>-->
+        <l-icon
+          :icon-size="dynamicSize"
+          :icon-anchor="dynamicAnchor"
+          :icon-url="url+'../img/'+c.imagen"
+        />
+      </l-marker>
 
-            <l-polyline
-              :lat-lngs="rutacarnaval"
-              color="red"
-              :weight="7"
-              line-cap="round"
-              line-join="round"
-              :opacity="0.6"
-            />
+      <l-polyline
+        :lat-lngs="rutacarnaval"
+        color="red"
+        :weight="7"
+        line-cap="round"
+        line-join="round"
+        :opacity="0.6"
+      />
       <!--      <l-polygon-->
       <!--        :lat-lngs="[-->
       <!--          [46.334852, -1.509485],-->
@@ -96,9 +97,9 @@
             <q-btn type="submit" color="primary" class="full-width" label="Actualizar" icon="send" />
           </q-card-section>
         </q-form>
-<!--        <q-card-actions align="right" class="bg-white text-teal">-->
-<!--          <q-btn flat label="OK" v-close-popup />-->
-<!--        </q-card-actions>-->
+        <!--        <q-card-actions align="right" class="bg-white text-teal">-->
+        <!--          <q-btn flat label="OK" v-close-popup />-->
+        <!--        </q-card-actions>-->
       </q-card>
     </q-dialog>
     <q-dialog v-model="modaldatos" full-width>
@@ -113,13 +114,13 @@
             style="height: 35px; max-width: 35px"
           />
         </q-card-section>
-<!--        <pre>{{conjunto}}</pre>-->
-<!--        <q-form @submit="actualizarconjunto">-->
-<!--          <q-card-section class="q-pt-none">-->
-<!--            <q-select @filter="filterFn" use-input outlined dense label="Conjunto" :options="conjuntos" v-model="conjunto"/>-->
-<!--            <q-btn type="submit" color="primary" class="full-width" label="Actualizar" icon="send" />-->
-<!--          </q-card-section>-->
-<!--        </q-form>-->
+        <!--        <pre>{{conjunto}}</pre>-->
+        <!--        <q-form @submit="actualizarconjunto">-->
+        <!--          <q-card-section class="q-pt-none">-->
+        <!--            <q-select @filter="filterFn" use-input outlined dense label="Conjunto" :options="conjuntos" v-model="conjunto"/>-->
+        <!--            <q-btn type="submit" color="primary" class="full-width" label="Actualizar" icon="send" />-->
+        <!--          </q-card-section>-->
+        <!--        </q-form>-->
         <q-card-actions align="right" class="bg-white text-teal">
           <q-btn flat icon="cancel" label="cerrar" v-close-popup />
         </q-card-actions>
@@ -263,7 +264,7 @@ export default {
         this.modelactualizarconjunto=true
       }
 
-        // this.center=[e.latlng.lat,e.latlng.lng]
+      // this.center=[e.latlng.lat,e.latlng.lng]
     },
     // async getCentro() {
     //   this.center = [-17.970371, -67.112303]

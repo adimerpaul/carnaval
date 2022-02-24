@@ -45,9 +45,9 @@ class PuntoController extends Controller
      * @param  \App\Models\Punto  $punto
      * @return \Illuminate\Http\Response
      */
-    public function show(Punto $punto)
+    public function show($rubro_id)
     {
-        //
+        return Punto::where('rubro_id',$rubro_id)->get();
     }
 
     /**

@@ -2,7 +2,7 @@
   "name": "carfront",
   "version": "0.0.1",
   "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "productName": "CARNAVAL 2022",
   "author": "adimerpaul <adimer101@gmail.com>",
   "private": true,
   "scripts": {
@@ -17,6 +17,7 @@
     "quasar": "^2.0.0",
     "socket.io-client": "^4.4.1",
     "vue": "^3.0.0",
+    "vue-leaflet-custom-marker": "^1.0.0",
     "vue-router": "^4.0.0",
     "vue2-leaflet-polylinedecorator": "^2.0.1",
     "vuex": "^4.0.1"

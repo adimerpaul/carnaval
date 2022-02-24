@@ -1,12 +1,15 @@
 import Index from "pages/Index";
 import Ruta from "pages/Ruta";
+import Rutaadmin from "pages/Rutaadmin";
+import Rubro from "pages/Rubro";
 const routes = [
   {
     path: "/",
     component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: "", component: Index},
-      { path: "ruta", component: Ruta },
+      { path: "", component: Ruta},
+      { path: "rutaadmin", component: Rutaadmin },
+      { path: "rubro/:id", component: Rubro },
     ],
   },
 

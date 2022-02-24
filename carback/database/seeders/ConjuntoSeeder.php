@@ -16,7 +16,7 @@ class ConjuntoSeeder extends Seeder
     public function run()
     {
         DB::table("conjuntos")->insert([
-            ["nombre"=>"Fraternidad Artística y Cultural La Diablada","imagen"=>'baseball-marker.png',"lat"=>0,"lng"=>0],
+            ["nombre"=>"Fraternidad Artística y Cultural La Diablada","imagen"=>'diablada.png',"lat"=>0,"lng"=>0],
             ["nombre"=>"Fraternidad Morenada Central Oruro","imagen"=>'baseball-marker.png',"lat"=>0,"lng"=>0],
             ["nombre"=>"Conjunto Folclórico Morenada Zona Norte","imagen"=>'baseball-marker.png',"lat"=>0,"lng"=>0],
             ["nombre"=>"Morenada Central Oruro","imagen"=>'baseball-marker.png',"lat"=>0,"lng"=>0],

@@ -17,11 +17,11 @@ class PuntoSeeder extends Seeder
     {
         DB::table("puntos")->insert([
             [
-                "nombre"=>"HOTAL PLAZA",
-                "imagen"=>"hotel.jpg",
-                "descripcion"=>"",
-                "direccion"=>"calle bolivar",
-                "telefono"=>"5278945",
+                "nombre"=>"HOTEL PLAZA",
+                "imagen"=>"baseball-marker.png",
+                "descripcion"=>"Flores Plaza Hotel es un hotel 3 estrellas en Oruro. Reserva en la web oficial de Flores Plaza Hotel.",
+                "direccion"=>"2VJP+87J, Oruro",
+                "telefono"=>" 2 5250023",
                 "lat"=>"-17.969287",
                 "lng"=>"-67.114600",
                 "rubro_id"=>"1",
