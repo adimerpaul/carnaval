@@ -240,7 +240,7 @@ export default {
       })
     },
     misconjuntos(){
-      this.$q.loading.show()
+      // this.$q.loading.show()
       this.$api.get("conjunto").then(res=>{
         // console.log(res.data)
         this.conjuntos=[]
@@ -251,7 +251,7 @@ export default {
         })
         this.conjuntos2=this.conjuntos
         this.conjunto=this.conjuntos[0]
-        this.$q.loading.hide()
+        // this.$q.loading.hide()
       })
     },
     ubicacion(e){
