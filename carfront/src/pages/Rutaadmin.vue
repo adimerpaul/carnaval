@@ -130,8 +130,8 @@
 </template>
 <script>
 // import io from 'socket.io-client'
-// const socket = io('https://socket.carnavaloruro.tk')
-const socket = io('https://policeoru.herokuapp.com')
+const socket = io('https://socket.carnavaloruro.tk')
+// const socket = io('https://policeoru.herokuapp.com')
 
 import {
   LMap,
