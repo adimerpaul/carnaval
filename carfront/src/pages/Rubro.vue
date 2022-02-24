@@ -132,6 +132,11 @@ export default {
     };
   },
   created() {
+    // console.log(this.$store.getters["login/nombre"])
+    // if (this.)
+    this.$api.get("rubro/"+(parseInt(this.id)+1)).then(res=>{
+      this.$store.commit("login/nombre",res.data.nombre)
+    })
     this.misrubros();
     this.$watch(
       () => this.$route.params,
@@ -139,7 +144,14 @@ export default {
         // react to route changes...
         // console.log(toParams)
         this.id=toParams.id
+        // console.log(this.id)
         this.misrubros();
+        if (this.id!=undefined){
+          this.$api.get("rubro/"+(parseInt(this.id)+1)).then(res=>{
+            this.$store.commit("login/nombre",res.data.nombre)
+          })
+        }
+
       }
     )
   },
@@ -181,7 +193,7 @@ export default {
     misrubros(){
       this.$q.loading.show()
       this.$api.get("punto/"+this.id).then(res=>{
-        console.log(res.data)
+        // console.log(res.data)
         this.puntos=[]
         res.data.forEach(r=>{
           let d=r

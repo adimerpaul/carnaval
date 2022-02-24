@@ -47,7 +47,7 @@ class RubroController extends Controller
      */
     public function show(Rubro $rubro)
     {
-        //
+        return $rubro;
     }
 
     /**

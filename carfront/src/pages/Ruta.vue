@@ -192,9 +192,11 @@ export default {
       lng:0,
       iconSize: 30,
       modaldatos:false,
+      id:this.$route.params.id
     };
   },
   created() {
+    this.$store.commit("login/nombre",undefined)
     this.misconjuntos();
     socket.on('chat message', message => {
       // console.log(message)

@@ -16,9 +16,11 @@
         <!--        </q-toolbar-title>-->
         <!--        <div>Quasar v{{ $q.version }}</div>-->
       </q-toolbar>
-      <div class="q-px-lg q-pt-xl q-mb-md">
-        <div class="text-h3">G.A.M.O.</div>
-        <div class="text-subtitle1">{{now}} </div>
+      <div class="q-px-lg">
+        <div v-if="$store.getters['login/nombre']==undefined" class="text-h6">Carnaval 2022 <small style="font-size: 10px">(Tiempo real)</small></div>
+        <div v-else class="text-h6">{{$store.getters["login/nombre"]}}</div>
+<!--        <div>{{$store.getters["login/nombre"]}}</div>-->
+        <div class="text-subtitle2">{{now}} </div>
       </div>
       <q-img
         src="~assets/gamo.jpg"
@@ -32,7 +34,7 @@
       :width="200"
       :breakpoint="600"
     >
-      <q-scroll-area style="height: calc(100% - 192px); margin-top: 192px; border-right: 1px solid #ddd">
+      <q-scroll-area style="height: calc(100% - 107.33px); margin-top: 107.33px; border-right: 1px solid #ddd">
         <q-list bordered>
           <q-item v-for="r in rubros" :key="r.id"  :to="r.url" exact clickable v-ripple>
             <q-item-section avatar>
@@ -47,7 +49,7 @@
         </q-list>
       </q-scroll-area>
 
-      <q-img class="absolute-top" src="~assets/gamo.jpg" style="height: 192px">
+      <q-img class="absolute-top" src="~assets/gamo.jpg" style="height: 107.33px">
         <div class="absolute-bottom bg-transparent">
           <q-avatar size="56px" class="q-mb-sm">
             <img src="~assets/logo.png">
@@ -70,12 +72,12 @@ export default {
   data () {
     return {
       leftDrawerOpen: false,
-      rubros:[]
-      // essentialLinks: linksData
+      rubros:[],
     }
   },
   created() {
-    // console.log('a')
+
+
     this.$api.get('rubro').then(res=>{
       this.rubros=res.data
       // console.log(res.data)
