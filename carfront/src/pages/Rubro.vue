@@ -135,7 +135,7 @@ export default {
   created() {
     // console.log(this.$store.getters["login/nombre"])
     // if (this.)
-    this.$api.get("rubro/"+(parseInt(this.id)+1)).then(res=>{
+    this.$api.get("rubro/"+(parseInt(this.id))).then(res=>{
       this.$store.commit("login/nombre",res.data.nombre)
     })
     this.misrubros();
@@ -148,7 +148,7 @@ export default {
         // console.log(this.id)
         this.misrubros();
         if (this.id!=undefined){
-          this.$api.get("rubro/"+(parseInt(this.id)+1)).then(res=>{
+          this.$api.get("rubro/"+(parseInt(this.id))).then(res=>{
             this.$store.commit("login/nombre",res.data.nombre)
           })
         }
