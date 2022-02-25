@@ -24,7 +24,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"252-41498",
                 "lat"=>"-17.950756264824065",
                 "lng"=>"-67.11102738242884",
-                "rubro_id"=>"1",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"Hospital Obrero",
@@ -34,7 +34,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"252-40920",
                 "lat"=>"-17.957157294255385",
                 "lng"=>"-67.11257373607079",
-                "rubro_id"=>"1",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"URPE Urgencias Pediátricas",
@@ -44,7 +44,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"71842308",
                 "lat"=>"-17.96695874257655",
                 "lng"=>"-67.11328212105563",
-                "rubro_id"=>"1",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"Hospital General San Juan de Dios",
@@ -54,7 +54,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"75428566",
                 "lat"=>"-17.96695874257655",
                 "lng"=>"-67.11328212105563",
-                "rubro_id"=>"1",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"Clínica Virgen del Socavón",
@@ -64,7 +64,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"252-83300",
                 "lat"=>"-17.971291739192374",
                 "lng"=>"-67.11206133210021",
-                "rubro_id"=>"1",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"Clínica URME",
@@ -74,7 +74,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"70424771",
                 "lat"=>"-17.967048749800735",
                 "lng"=>"-67.11182929439266",
-                "rubro_id"=>"1",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"Seguro Social Universitario",
@@ -84,7 +84,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"252-73991",
                 "lat"=>"-17.972863109861663",
                 "lng"=>"-67.11089190326442",
-                "rubro_id"=>"1",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"Clínica Cristo Rey",
@@ -94,7 +94,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"252-75796",
                 "lat"=>"-17.976396411321318",
                 "lng"=>"-67.11107634559272",
-                "rubro_id"=>"1",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"Clinica San Agustin",
@@ -104,7 +104,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"252-89444",
                 "lat"=>"-17.97730817186877",
                 "lng"=>"-67.10190381860755",
-                "rubro_id"=>"1",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"Clinica Natividad",
@@ -114,7 +114,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"71189245",
                 "lat"=>"-17.973624113427515",
                 "lng"=>"-67.10188236096525",
-                "rubro_id"=>"1",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"Asistencia Pública",
@@ -124,7 +124,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"",
                 "lat"=>"-17.968768294953563",
                 "lng"=>"-67.11568102898104",
-                "rubro_id"=>"1",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"Comando Departamental de Policía Oruro",
@@ -134,7 +134,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"252-51924",
                 "lat"=>"-17.969547707153566",
                 "lng"=>"-67.11581841982053",
-                "rubro_id"=>"2",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"Oficinas de Transito",
@@ -144,7 +144,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"252-254761",
                 "lat"=>"-17.970677961571266",
                 "lng"=>"-67.10949645317552",
-                "rubro_id"=>"2",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"Dirección Departamental de Bomberos de la Policía",
@@ -154,7 +154,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"",
                 "lat"=>"-17.95304902822611",
                 "lng"=>"-67.10065004892564",
-                "rubro_id"=>"2",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"Radio Patrullas 110",
@@ -164,7 +164,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"252-50010 252-50110",
                 "lat"=>"-17.974914748492903",
                 "lng"=>"-67.09645542056013",
-                "rubro_id"=>"2",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"U.T.O.P.",
@@ -174,7 +174,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"52-52484",
                 "lat"=>"-17.969310102279128",
                 "lng"=>"-67.11585181491141",
-                "rubro_id"=>"2",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"F.E.L.C.V.",
@@ -184,7 +184,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"800140348 62805818  252-84512  252-50899",
                 "lat"=>"-17.96900507737983",
                 "lng"=>"-67.10367707446358",
-                "rubro_id"=>"2",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"F.E.L.C.N.",
@@ -194,7 +194,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"252-53893",
                 "lat"=>"-17.973197055409738",
                 "lng"=>"-67.06405266832861",
-                "rubro_id"=>"2",
+                "rubro_id"=>"3",
             ],
             [
                 "nombre"=>"F.E.L.C.C.",
@@ -204,7 +204,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"252-51921",
                 "lat"=>"-17.969785619879232",
                 "lng"=>"-67.1154273799862",
-                "rubro_id"=>"2",
+                "rubro_id"=>"3",
             ],
         ]);
     }
