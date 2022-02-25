@@ -22,16 +22,15 @@ class RubroSeeder extends Seeder
             ["nombre"=>"Salud","descripcion"=>"Hospitales y centro de salud","icono"=>"o_medical_services","url"=>"/rubro/3"],
             ["nombre"=>"Policia","descripcion"=>"Retenes Policiales","icono"=>"o_local_police","url"=>"/rubro/4"],
 
-            ["nombre"=>"Farmacia","descripcion"=>"Baños cerca a la ruta del carnaval","icono"=>"o_shopping_cart","url"=>"/rubro/5"],
-            ["nombre"=>"Baños","descripcion"=>"Baños cerca a la ruta del carnaval","icono"=>"o_shopping_cart","url"=>"/rubro/6"],
-            ["nombre"=>"Cajeros de banco","descripcion"=>"Baños cerca a la ruta del carnaval","icono"=>"o_shopping_cart","url"=>"/rubro/7"],
-            ["nombre"=>"Parqueo","descripcion"=>"Baños cerca a la ruta del carnaval","icono"=>"o_shopping_cart","url"=>"/rubro/8"],
-            ["nombre"=>"Hoteleria","descripcion"=>"Hoteles disponibles","icono"=>"o_shopping_cart","url"=>"/rubro/9"],
-            ["nombre"=>"Supermercados","descripcion"=>"Compra en tiendas","icono"=>"o_shopping_cart","url"=>"/rubro/10"],
-            ["nombre"=>"Gastronomia","descripcion"=>"","icono"=>"o_home","url"=>"/rubro/11"],
-            ["nombre"=>"Turismo","descripcion"=>"","icono"=>"o_home","url"=>"/rubro/12"],
-            ["nombre"=>"RadioTaxi","descripcion"=>"","icono"=>"o_home","url"=>"/rubro/13"],
-            ["nombre"=>"Entretenimiento","descripcion"=>"","icono"=>"o_home","url"=>"/rubro/14"],
+            ["nombre"=>"Farmacia","descripcion"=>"Baños cerca a la ruta del carnaval","icono"=>"o_local_pharmacy","url"=>"/rubro/6"],
+            ["nombre"=>"Baños","descripcion"=>"Baños cerca a la ruta del carnaval","icono"=>"o_wash","url"=>"/rubro/7"],
+            ["nombre"=>"Cajeros de banco","descripcion"=>"Baños cerca a la ruta del carnaval","icono"=>"o_local_atm","url"=>"/rubro/8"],
+            ["nombre"=>"Parqueo","descripcion"=>"Baños cerca a la ruta del carnaval","icono"=>"o_local_parking","url"=>"/rubro/9"],
+            ["nombre"=>"Hoteles","descripcion"=>"Hoteles disponibles","icono"=>"o_hotel","url"=>"/rubro/10"],
+            ["nombre"=>"Mercados","descripcion"=>"Compra en tiendas","icono"=>"o_storefront","url"=>"/rubro/11"],
+            ["nombre"=>"Gastronomia","descripcion"=>"","icono"=>"o_restaurant","url"=>"/rubro/12"],
+            ["nombre"=>"Turismo","descripcion"=>"","icono"=>"o_travel_explore","url"=>"/rubro/13"],
+            ["nombre"=>"RadioTaxi","descripcion"=>"","icono"=>"o_local_taxi","url"=>"/rubro/14"],
 
         ]);
     }
