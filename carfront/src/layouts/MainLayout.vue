@@ -34,7 +34,7 @@
       :width="200"
       :breakpoint="600"
     >
-      <q-scroll-area style="height: calc(100% - 107.33px); margin-top: 107.33px; border-right: 1px solid #ddd">
+      <q-scroll-area style="height: calc(100% - 103.99px); margin-top: 103.99px; border-right: 1px solid #ddd">
         <q-list bordered>
           <q-item v-for="r in rubros" :key="r.id"  :to="r.url" exact clickable v-ripple>
             <q-item-section avatar>
@@ -49,7 +49,7 @@
         </q-list>
       </q-scroll-area>
 
-      <q-img class="absolute-top" src="~assets/gamo.jpg" style="height: 107.33px">
+      <q-img class="absolute-top" src="~assets/gamo.jpg" style="height: 103.99px">
         <div class="absolute-bottom bg-transparent">
           <q-avatar size="56px" class="q-mb-sm">
             <img src="~assets/logo.png">

@@ -1,5 +1,5 @@
 <template>
-  <div style="height: 90vh ; width: 100%;">
+  <div style="height: 80vh ; width: 100%;">
 <!--    <q-btn @click="click" label="click" icon="send" color="negative" />-->
     <l-map
       @ready="onReady"
