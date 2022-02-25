@@ -80,7 +80,7 @@ export default {
 
     this.$api.get('rubro').then(res=>{
       this.rubros=res.data
-       console.log(res.data)
+       // console.log(res.data)
     })
   },
   computed:{
