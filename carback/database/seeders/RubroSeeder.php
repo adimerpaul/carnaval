@@ -17,7 +17,7 @@ class RubroSeeder extends Seeder
     {
         DB::table("rubros")->insert([
             ["nombre"=>"Ruta","descripcion"=>"En tiempo real","icono"=>"o_map","url"=>"/"],
-            ["nombre"=>"Fotografias","descripcion"=>"Imagenes y galaeria","icono"=>"photo_camera","url"=>"/photo"],
+            ["nombre"=>"Fotografias","descripcion"=>"Imagenes y galaeria","icono"=>"o_photo_camera","url"=>"/photo"],
             ["nombre"=>"Videos","descripcion"=>"Videos y historia","icono"=>"ondemand_video","url"=>"/video"],
             ["nombre"=>"Salud","descripcion"=>"Hospitales y centro de salud","icono"=>"o_medical_services","url"=>"/rubro/3"],
             ["nombre"=>"Policia","descripcion"=>"Retenes Policiales","icono"=>"o_local_police","url"=>"/rubro/4"],
