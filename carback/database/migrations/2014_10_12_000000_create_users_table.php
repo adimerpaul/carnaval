@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::defaultStringLength(255);
+        Schema::defaultStringLength(200);
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
