@@ -125,6 +125,25 @@
         </q-card-actions>
       </q-card>
     </q-dialog>
+    <q-dialog v-model="modalpropaganda" full-height full-width>
+      <q-card class="q-pa-none q-ma-none">
+        <q-card-section class="q-pa-none q-ma-none" align="right">
+<!--          <div class="text-h6">Alert</div>-->
+          <q-btn icon="close" size="xs" class="q-ma-none q-pa-none" v-close-popup flat/>
+        </q-card-section>
+
+        <q-card-section class="q-pa-none">
+          <q-img
+            src="img/1.jpeg"
+            spinner-color="white"
+          />
+        </q-card-section>
+
+<!--        <q-card-actions align="right">-->
+<!--          <q-btn flat label="OK" color="primary" v-close-popup />-->
+<!--        </q-card-actions>-->
+      </q-card>
+    </q-dialog>
   </div>
 </template>
 <script>
@@ -147,6 +166,7 @@ import {
 import "leaflet/dist/leaflet.css";
 export default {
   components: {
+
     LMap,
     LIcon,
     LTileLayer,
@@ -160,6 +180,7 @@ export default {
   },
   data() {
     return {
+      modalpropaganda:false,
       url:process.env.API,
       modelactualizarconjunto:false,
       rutacarnaval:[
