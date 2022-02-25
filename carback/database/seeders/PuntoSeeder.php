@@ -206,6 +206,47 @@ class PuntoSeeder extends Seeder
                 "lng"=>"-67.1154273799862",
                 "rubro_id"=>"5",
             ],
+            //TURISMO
+            [
+                "nombre"=>"MONUMENTO DE LA VIRGEN DEL SOCAVON",
+                "imagen"=>"marker1.png",
+                "descripcion"=>"",
+                "direccion"=>"VIRGEN",
+                "telefono"=>"",
+                "lat"=>"-17.974311732127454",
+                "lng"=>"-67.12071297825244",
+                "rubro_id"=>"6",
+            ],
+            [
+                "nombre"=>"MONUMENTO DE LA VIRGEN DEL SOCAVON",
+                "imagen"=>"marker1.png",
+                "descripcion"=>"",
+                "direccion"=>"VIRGEN",
+                "telefono"=>"",
+                "lat"=>"-17.974311732127454",
+                "lng"=>"-67.12071297825244",
+                "rubro_id"=>"6",
+            ], 
+            [
+                "nombre"=>"EL CONDOR",
+                "imagen"=>"marker1.png",
+                "descripcion"=>"",
+                "direccion"=>"EL CONDOR",
+                "telefono"=>"",
+                "lat"=>"-17.975300387051526",
+                "lng"=>"-67.11886062388868",
+                "rubro_id"=>"6",
+            ], 
+            [
+                "nombre"=>"EL CONDOR",
+                "imagen"=>"marker1.png",
+                "descripcion"=>"",
+                "direccion"=>"EL CONDOR",
+                "telefono"=>"",
+                "lat"=>"-17.975300387051526",
+                "lng"=>"-67.11886062388868",
+                "rubro_id"=>"6",
+            ], 
 
             //farmacias
             [
@@ -216,17 +257,17 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"252-51784",
                 "lat"=>"-17.970091994770502",
                 "lng"=>"-67.11489547830915",
-                "rubro_id"=>"6",
+                "rubro_id"=>"7",
             ],
             [
-                "nombre"=>"FARMACORP",
+                "nombre"=>"FARMSAACORP",
                 "imagen"=>"marker1.png",
                 "descripcion"=>"",
                 "direccion"=>"C. Bolívar entre Presidente Montes y La Plata",
                 "telefono"=>"252-51784",
                 "lat"=>"-17.970091994770502",
                 "lng"=>"-67.11489547830915",
-                "rubro_id"=>"6",
+                "rubro_id"=>"7",
             ],
             [
                 "nombre"=>"Farmacia Santa Marta",
@@ -236,7 +277,7 @@ class PuntoSeeder extends Seeder
                 "telefono"=>"25251784",
                 "lat"=>"-17.970339400204356",
                 "lng"=>"-67.11401227465744",
-                "rubro_id"=>"6",
+                "rubro_id"=>"7",
             ],
             //baños
 
