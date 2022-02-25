@@ -208,7 +208,36 @@ class PuntoSeeder extends Seeder
             ],
 
             //farmacias
-
+            [
+                "nombre"=>"FARMACORP",
+                "imagen"=>"marker1.png",
+                "descripcion"=>"",
+                "direccion"=>"C. Bolívar entre Presidente Montes y La Plata",
+                "telefono"=>"252-51784",
+                "lat"=>"-17.970091994770502",
+                "lng"=>"-67.11489547830915",
+                "rubro_id"=>"6",
+            ],
+            [
+                "nombre"=>"FARMACORP",
+                "imagen"=>"marker1.png",
+                "descripcion"=>"",
+                "direccion"=>"C. Bolívar entre Presidente Montes y La Plata",
+                "telefono"=>"252-51784",
+                "lat"=>"-17.970091994770502",
+                "lng"=>"-67.11489547830915",
+                "rubro_id"=>"6",
+            ],
+            [
+                "nombre"=>"Farmacia Santa Marta",
+                "imagen"=>"marker1.png",
+                "descripcion"=>"",
+                "direccion"=>"C. Bolívar entre La Plata y Soria Galvarro",
+                "telefono"=>"25251784",
+                "lat"=>"-17.970339400204356",
+                "lng"=>"-67.11401227465744",
+                "rubro_id"=>"6",
+            ],
             //baños
 
             //atm
